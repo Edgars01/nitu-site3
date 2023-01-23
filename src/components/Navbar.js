@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 
 export const Navbar = () => {
 
-  const {click, setClick} = useState(false);
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
 
   return (
     <>
@@ -14,7 +16,7 @@ export const Navbar = () => {
                   PCSTORE
                 </Link>
 
-                <div className="menu-icon">
+                <div className="menu-icon" onClick={handleClick}>
                   <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
 
