@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Navbar } from './components/Navbar';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -6,6 +6,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
+
+  const {click, setClick} = useState(false)
+
   return (
    
     <>
@@ -16,6 +19,7 @@ function App() {
           </Routes>
       </Router>
     </>
+    
   );
 }
 
