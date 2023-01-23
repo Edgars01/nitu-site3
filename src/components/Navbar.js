@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import '../component-style/Navbar.css';
 import { Button } from './Button';
@@ -21,6 +21,10 @@ export const Navbar = () => {
       setButton(true);
     }
   };
+
+  useEffect(() => {
+    showButton();
+  }, []);
 
   window.addEventListener('resize', showButton);
 
@@ -63,10 +67,8 @@ export const Navbar = () => {
                     </Link>
                   </li>
 
-                  
-                
                 </ul>
-
+                
                 {button && <Button buttonStyle='btn--outline'>NEWS</Button>}
 
             </div>
