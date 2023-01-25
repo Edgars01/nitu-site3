@@ -2,6 +2,9 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import '../component-style/Navbar.css';
 import { Button } from './Button';
+import NavBarLink from './NavBarLink';
+
+import { navLinks } from './NavBarLinkContent';
 
 export const Navbar = () => {
 
@@ -10,17 +13,9 @@ export const Navbar = () => {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
-
-  const showButton = () => {
-    if (window.innerWidth <= 960)
-    {
-      setButton(false);
-    }
-    else
-    {
-      setButton(true);
-    }
-  };
+  
+  const showButton = () =>
+    window.innerWidth <= 960 ? setButton(false) : setButton(true);
 
   useEffect(() => {
     showButton();
@@ -30,49 +25,37 @@ export const Navbar = () => {
 
   return (
     <>
-        <nav className="navbar">
-            <div className="navbar-container">
+      <nav className="navbar">
+          <div className="navbar-container">
 
-                <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                  PCSTORE
-                </Link>
+              <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                PCSTORE
+                <i class="fa-solid fa-laptop-code"></i>
+              </Link>
 
-                <div className="menu-icon" onClick={handleClick}>
-                  <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-                </div>
+              <div className="menu-icon" onClick={handleClick}>
+                <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
+              </div>
 
-                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-                  
-                  <li className='nav-item'>
-                    <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                      Home
-                    </Link>
-                  </li>
-
-                  <li className='nav-item'>
-                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                      Products
-                    </Link>
-                  </li>
-
-                  <li className='nav-item'>
-                    <Link to='/products' className='nav-links' onClick={closeMobileMenu}>
-                      ???
-                    </Link>
-                  </li>
-
-                  <li className='nav-item'>
-                    <Link to='/products' className='nav-links-mobile' onClick={closeMobileMenu}>
-                      NEWS
-                    </Link>
-                  </li>
-
-                </ul>
+              <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                 
-                {button && <Button buttonStyle='btn--outline'>NEWS</Button>}
+                {
+                  navLinks.map((item, index) =>  <NavBarLink key={index} url={item.url} title={item.title} onClick={closeMobileMenu}/>)
+                }
 
-            </div>
-        </nav>
+                <li className='nav-item'>
+                  <Link to='/products' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    NEWS
+                  </Link>
+                </li>
+
+              </ul>
+              
+              {button && <Button buttonStyle='btn--outline'>NEWS</Button>}
+
+          </div>
+      </nav>
     </>
   )
 }
+

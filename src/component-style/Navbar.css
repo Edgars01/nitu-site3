@@ -29,7 +29,7 @@
     align-items: center;
   }
   
-  .fa-typo3 {
+  .fa-laptop-code {
     margin-left: 0.5rem;
     font-size: 1.8rem;
   }
@@ -37,16 +37,19 @@
   .nav-menu {
     display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 60vw;
     justify-content: end;
     margin-right: 2rem;
   }
+
+  .nav-menu:not(:first-child):not(:last-child) {
+    padding: 0 10px 0 10px;
+  } 
   
   .nav-item {
-    height: 80px;
+    /* height: 80px; */
   }
   
   .nav-links {
