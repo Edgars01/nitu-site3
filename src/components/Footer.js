@@ -20,9 +20,9 @@ export const Footer = () => {
         </p>
 
         <div className='input-areas'>
-          <form>
+          <form className='footer-form-style'>
             <input className='footer-input' name='email' type='email' placeholder='Your Email' />
-            <Button buttonStyle='btn--outline'>Subscribe</Button>
+            <Button buttonStyle='btn--outline' color="red" className='productbox-button'>Subscribe</Button>
           </form>
         </div>
 

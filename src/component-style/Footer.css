@@ -6,6 +6,20 @@
     justify-content: center;
     align-items: center;
   }
+
+  .btn {
+    background-color: rgb(48, 53, 186) !important;
+    color: rgb(206, 206, 206) !important;
+  }
+
+  .btn:hover {
+    color: white !important;
+  }
+
+  .footer-form-style {
+    display: flex;
+    align-items: baseline;
+  }
   
   .footer-subscription {
     display: flex;
