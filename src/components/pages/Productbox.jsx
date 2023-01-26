@@ -1,6 +1,7 @@
 import React from 'react'
+import '../../component-style/Products.css';
 
-const Productbox = () => {
+const Productbox = (props) => {
   return (
     <div className='a-box'>
 
@@ -10,6 +11,7 @@ const Productbox = () => {
 
         <div className="a-b-text">
             <h2> {props.title} </h2>
+            <br />
             <button className='productbox-button'>BUY NOW</button>
         </div>
 

@@ -28,7 +28,7 @@ const HeroSection = () => {
                 buttonSize='btn--large'
             >
                 WATCH TRAILER
-                <i class="fa-solid fa-play"></i>
+                <i className="fa-solid fa-play"></i>
             </Button>
 
         </div>

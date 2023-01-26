@@ -30,7 +30,7 @@ export const Navbar = () => {
 
               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
                 PCSTORE
-                <i class="fa-solid fa-laptop-code"></i>
+                <i className="fa-solid fa-laptop-code"></i>
               </Link>
 
               <div className="menu-icon" onClick={handleClick}>
