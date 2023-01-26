@@ -3,7 +3,7 @@ import '../../component-style/Products.css';
 import Productbox from './Productbox';
 import product1 from './images/product1.jpg';
 
-
+import { Filter } from '../Filter.js';
 
 const Products = (props) => {
   return (
@@ -15,10 +15,10 @@ const Products = (props) => {
 
         <div className="a-container">
             
-        <Productbox image={product1} title='adsadsadsd' />
-        <Productbox image={product1} title='5675675' />
-        <Productbox image={product1} title='zxczxc' />
-
+          <Filter/>
+          <Productbox image={product1} title='adsadsadsd' />
+          <Productbox image={product1} title='5675675' />
+          <Productbox image={product1} title='zxczxc' />
 
         </div>
 

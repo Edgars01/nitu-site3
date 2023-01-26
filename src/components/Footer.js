@@ -28,11 +28,11 @@ export const Footer = () => {
 
       </section>
 
-      <div class='footer-links'>
+      <div className='footer-links'>
 
         <div className='footer-link-wrapper'>
 
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
@@ -41,7 +41,7 @@ export const Footer = () => {
             <Link to='/'>Terms of Service</Link>
           </div>
 
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
@@ -54,7 +54,7 @@ export const Footer = () => {
 
         <div className='footer-link-wrapper'>
 
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
@@ -63,7 +63,7 @@ export const Footer = () => {
             <Link to='/'>Terms of Service</Link>
           </div>
 
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>About Us</h2>
             <Link to='/sign-up'>How it works</Link>
             <Link to='/'>Testimonials</Link>
@@ -76,39 +76,39 @@ export const Footer = () => {
 
       </div>
       
-      <section class='social-media'>
+      <section className='social-media'>
         
-        <div class='social-media-wrap'>
+        <div className='social-media-wrap'>
           
-          <div class='footer-logo'>
+          <div className='footer-logo'>
             <Link to='/' className='social-logo'>
               PCSTORE
-              <i class='fa-solid fa-laptop-code' />
+              <i className='fa-solid fa-laptop-code' />
             </Link>
           </div>
 
-          <small class='website-rights'>PCSTORE © 2023</small>
+          <small className='website-rights'>PCSTORE © 2023</small>
 
-          <div class='social-icons'>
+          <div className='social-icons'>
 
-            <Link class='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i class='fab fa-facebook-f' />
+            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
+              <i className='fab fa-facebook-f' />
             </Link>
             
-            <Link class='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i class='fab fa-facebook-f' />
+            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
+              <i className='fab fa-facebook-f' />
             </Link>
 
-            <Link class='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i class='fab fa-facebook-f' />
+            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
+              <i className='fab fa-facebook-f' />
             </Link>
 
-            <Link class='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i class='fab fa-facebook-f' />
+            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
+              <i className='fab fa-facebook-f' />
             </Link>
             
-            <Link class='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
-              <i class='fab fa-facebook-f' />
+            <Link className='social-icon-link facebook' to='/' target='_blank' aria-label='Facebook'>
+              <i className='fab fa-facebook-f' />
             </Link>
 
           </div>
