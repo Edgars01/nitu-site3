@@ -7,10 +7,10 @@ import './App.css';
 import Home from './components/pages/Home';
 import Products from './components/pages/Products';
 
+import Carousel from './components/pages/Carousel';
+import { CarouselData } from './components/CarouselData';
 
 function App() {
-
-
 
   return (
 
@@ -23,9 +23,10 @@ function App() {
           <Route exact path="/" element={<Home />} />
         </Routes>
 
-
         <Products />
 
+        
+        <Carousel slides={CarouselData} />
         <Footer />
 
       </Router>
