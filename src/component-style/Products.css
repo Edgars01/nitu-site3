@@ -105,6 +105,10 @@
 
     #products {
         height: auto;
+        clip-path: polygon(2% 2%, 100% 0, 100% 100%, 0 96%);
+
+
+
     }
 
     .a-container {
